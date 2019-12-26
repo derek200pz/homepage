@@ -1,0 +1,114 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+#footer {
+    width: 100%;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 3rem 0;
+}
+
+p {
+    margin-bottom: 3rem;
+    text-indent: 3rem;
+    font-size: 1.3rem;
+}
+
+#content {
+    padding-bottom: 5rem;
+}
+
+.emphasis {
+    color: #FF026D;
+    font-weight: bolder;
+    /* from stack-overflow example-code -- font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, sans-serif; */
+}
+
+
+/* for the navbar */
+
+ul.dl-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.dl-nav li {
+    float: left;
+}
+
+.dl-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dl-nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.dl-nav .active {
+    background-color: #FF026D;
+}
+
+
+/* for the footer */
+
+ul.dl-footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+}
+
+.dl-footer li {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+
+/* for parallax of my own: */
+
+.plain-img {
+    min-height: 100%;
+    background-image: url("../img/derek-lopez-plain.png");
+}
+
+.crazy-img {
+    min-height: 100%;
+    background-image: url("../img/derek-lopez-crazy-2.png");
+}
+
+.crazy-bg-img {
+    min-height: 10%;
+    background-image: url("../img/crazy-bg.png");
+}
+
+.plain-img,
+.crazy-img,
+.crazy-bg-img {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

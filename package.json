@@ -1,9 +1,10 @@
 {
   "name": "homepage",
-  "version": "1.0.0",
-  "description": "A homepage for myself, merely a static site that I can host with siue's hosting system.",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "A homepage for myself, Derek",
+  "main": "simple-server.js",
   "scripts": {
+    "start": "node simple-server.js",
     "test": "echo hey bud"
   },
   "keywords": [

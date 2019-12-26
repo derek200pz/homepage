@@ -1,0 +1,24 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "A homepage for myself, merely a static site that I can host with siue's hosting system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo hey bud"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "js",
+    "homepage",
+    "static",
+    "website",
+    "derek"
+  ],
+  "author": "Derek Lopez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

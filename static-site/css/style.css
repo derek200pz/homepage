@@ -1,3 +1,14 @@
+@keyframes example {
+    from {
+        color: #fff;
+        padding-left: 10rem;
+    }
+    to {
+        color: #FF026D;
+        padding-left: auto;
+    }
+}
+
 body,
 html {
     height: 100%;
@@ -12,16 +23,15 @@ html {
 h1 {
     font-size: 3rem;
     padding: 3rem 0;
+    color: #FF026D;
+    animation-name: example;
+    animation-duration: 1s;
 }
 
 p {
     margin-bottom: 3rem;
     text-indent: 3rem;
     font-size: 1.3rem;
-}
-
-#content {
-    padding-bottom: 5rem;
 }
 
 .emphasis {
@@ -111,4 +121,15 @@ ul.dl-footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+/*for the different sections of the main page*/
+
+.dl-sideline {
+    background-color: #b3b3b3;
+}
+
+.row:nth-child(odd) .dl-sideline {
+    background-color: #ddd;
 }

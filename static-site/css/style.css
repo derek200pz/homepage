@@ -131,11 +131,19 @@ ul.dl-footer {
     }
 }
 
+@supports not (-webkit-overflow-scrolling: touch) {
+    /* disable paralax on iphones */
+    .plain-img,
+    .crazy-img,
+    .crazy-bg-img {
+        background-attachment: fixed;
+    }
+}
+
 .plain-img,
 .crazy-img,
 .crazy-bg-img {
     position: relative;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

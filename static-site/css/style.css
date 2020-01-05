@@ -6,24 +6,24 @@ html {
 
 #footer {
     width: 100%;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 h1 {
-    font-size: 3rem;
-    padding: 3rem 0;
+    font-size: 3em;
+    padding: 3em 0;
     color: #FF026D;
     opacity: 0;
-    -webkit-transform: translateX(-5rem);
-    transform: translateX(-5rem);
+    -webkit-transform: translateX(-5em);
+    transform: translateX(-5em);
     transition: transform 1s, opacity 1s;
     will-change: transform;
 }
 
 p {
-    margin-bottom: 3rem;
-    text-indent: 3rem;
-    font-size: 1.3rem;
+    margin-bottom: 3em;
+    text-indent: 3em;
+    font-size: 1.3em;
 }
 
 .emphasis {
@@ -64,7 +64,7 @@ ul.dl-nav {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1em 1.5em;
     text-decoration: none;
 }
 
@@ -93,7 +93,7 @@ ul.dl-footer {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1em 1.5em;
 }
 
 
@@ -128,6 +128,9 @@ ul.dl-footer {
     .plain-img,
     .crazy-bg-img {
         display: none;
+    }
+    .crazy-img {
+        background-image: url("../img/derek-lopez-crazy-small.png");
     }
 }
 

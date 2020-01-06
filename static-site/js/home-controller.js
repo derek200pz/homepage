@@ -48,7 +48,7 @@ $(document).ready(
         $("#menu").on("click", function() {
             openMenu();
         });
-        $("html").on("click", function() {
+        $("body").on("click", function() {
             closeMenu();
         });
         //color all the H1 elements white to hide them before their animations

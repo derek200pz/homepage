@@ -34,17 +34,29 @@ function checkAnimation() {
     });
 }
 
+function openMenu() {
+    $("ul.dl-nav").css("transform", "translateX(0)");
+}
+
+function closeMenu() {
+    $("ul.dl-nav").css("transform", '');
+}
+
 $(document).ready(
     function() {
-
+        //handle the menu button being clicked
+        $("#menu").on("click", function() {
+            openMenu();
+        });
+        $("html").on("click", function() {
+            closeMenu();
+        });
         //color all the H1 elements white to hide them before their animations
         $('h1').addClass("white-text");
-
         //----------CODE TO RUN ANIMATIONS ONLY WHEN THEY COME INTO VIEW----------
         $(window).scroll(function() {
             checkAnimation();
         });
-
         //----------CODE TO RETRIEVE AND INSERT CONTENT FROM JSON RANDOMLY----------
         var json = null;
         $.ajax({

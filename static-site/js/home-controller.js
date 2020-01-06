@@ -48,6 +48,9 @@ $(document).ready(
         $("#menu").on("click", function() {
             openMenu();
         });
+        $("#menu").on("touchend", function() {
+            openMenu();
+        });
         $("body").on("click", function() {
             closeMenu();
         });

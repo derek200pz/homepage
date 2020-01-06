@@ -51,6 +51,9 @@ $(document).ready(
         $("body").on("click", function() {
             closeMenu();
         });
+        $("body").on("touchend", function() {
+            closeMenu();
+        });
         //color all the H1 elements white to hide them before their animations
         $('h1').addClass("white-text");
         //----------CODE TO RUN ANIMATIONS ONLY WHEN THEY COME INTO VIEW----------

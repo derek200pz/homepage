@@ -129,6 +129,11 @@
         background-image: url("../img/crazy-bg.png");
     }
     
+    .family-img {
+        min-height: 90%;
+        background-image: url("../img/mom-and-dad-smaller.png");
+    }
+    
     @media only screen and (max-width: 700px) {
         .plain-img {
             background-image: url("../img/derek-lopez-plain-small.png");
@@ -153,14 +158,16 @@
         /* disable paralax on iphones */
         .plain-img,
         .crazy-img,
-        .crazy-bg-img {
+        .crazy-bg-img,
+        .family-img {
             background-attachment: fixed;
         }
     }
     
     .plain-img,
     .crazy-img,
-    .crazy-bg-img {
+    .crazy-bg-img,
+    .family-img {
         position: relative;
         background-position: center;
         background-repeat: no-repeat;

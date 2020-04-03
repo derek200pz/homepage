@@ -1,6 +1,6 @@
 {
     "active": true,
-	"agressive": false,
+	"agressive": true,
 	"tags": {
 		"H1": "Breaking News: Austin is a Nincompoop",
 		"H2": "Other Stories about Austin",

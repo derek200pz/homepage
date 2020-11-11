@@ -11,29 +11,35 @@
     <!-- my own CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- my own JS -->
-    <script src="./js/prank-controller.js"></script>
+    <script src="./js/home-controller.js"></script>
 </head>
 
 <body>
     <button id="menu" class="btn" onclick="event.stopPropagation()"><i class="fa fa-bars"></i></button>
     <ul class="dl-nav">
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">Projects</a></li>
-        <li><a href="#contact">Art</a></li>
-        <li><a href="#contact">Blog</a></li>
-        <li><a href="#about">Contact</a></li>
+        <li><a class="active" href="/index.html">Home</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="#art">Art</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 
-    
+
+    <!-- <div class="card" style="width:400px">
+                <img class="card-img-top" src="./img/card-1.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Abstract Art</h4>
+                    <p class="card-text">This kinda looks like something Dr. Seuss would draw, but honestly it's pretty bad. I drew it with a trackpad in MS-Paint...</p>
+                    <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+                </div>
+            </div> -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-1 dl-sideline">
             </div>
             <div class="col-lg-10">
-                <h1 class="text-center" id="prank-title">Enter Your Prank!</h1>
-                <label for="pranktext">W3Schools mission:</label>
-
-				<textarea id="pranktext" rows="20" cols="50">Javascript didn't work?</textarea>
+                <h1 class="text-center" id="projects-title">My Projects</h1>
+                <p>Many of these projects are still works in progress. Check out <a href="the-mystery-continues.herokuapp.com">my socket.io game</a>, which I try to update when I'm not super busy.</p>
             </div>
             <div class="col-lg-1 dl-sideline">
             </div>

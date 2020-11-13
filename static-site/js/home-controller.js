@@ -1,4 +1,4 @@
-const verbose = true;
+const verbose = false;
 var verb = function(obj) {
     if (verbose) console.log(obj);
 }
@@ -52,11 +52,15 @@ $(document).ready(
             openMenu();
         });
         //close menu when body is clicked or touched
-        $("body").on("touchend", function() {
-            closeMenu();
+        $("body").on("touchend", function(event) {
+            if(event.target.localName != 'a'){//if you don't exclude anchor elements, the links won't work on some android devices
+                closeMenu();
+            }
         });
-        $("body").on("click", function() {
-            closeMenu();
+        $("body").on("click", function(event) {
+            if(event.target.localName != 'a'){
+                closeMenu();
+            }
         });
 
         //----------CODE TO RUN ANIMATIONS ONLY WHEN THEY COME INTO VIEW----------

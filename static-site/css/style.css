@@ -134,7 +134,7 @@
         background-image: url("../img/mom-and-dad-smaller.png");
     }
     
-    @media only screen and (max-width: 700px) {
+    @media all and (max-width: 700px) {
         .plain-img {
             background-image: url("../img/derek-lopez-plain-small.png");
         }
@@ -144,7 +144,7 @@
     }
     
     @supports (-webkit-overflow-scrolling: touch) {
-        /* disable paralax on iphones */
+        /* disable paralax on safari */
         .plain-img,
         .crazy-bg-img {
             display: none;
@@ -155,7 +155,7 @@
     }
     
     @supports not (-webkit-overflow-scrolling: touch) {
-        /* disable paralax on iphones */
+        /* disable paralax on safari */
         .plain-img,
         .crazy-img,
         .crazy-bg-img,

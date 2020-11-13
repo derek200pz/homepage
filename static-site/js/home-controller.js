@@ -76,5 +76,7 @@ $(document).ready(
                 $("#home-currently").html(data.homeCurrently)
             }
         });
+        //check animations once on pageload in case they need to swoop in before the first scroll action
+        checkAnimation();
     }
 )
